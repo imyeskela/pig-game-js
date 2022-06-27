@@ -56,7 +56,7 @@ const RollDice = function () {
     if (isPlaying){
         const diceNum = Math.trunc(Math.random() * 6) + 1;
         diceElement.style.display = 'block';
-        diceElement.src = `dice${diceNum}.png`;
+        diceElement.src = `dices/dice${diceNum}.png`;
 
         if (diceNum !== 1) {
             currentScore += diceNum;
