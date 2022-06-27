@@ -8,6 +8,8 @@
     <title>Pig Game</title>
   </head>
   <body>
+
+
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Игрок 1</h2>
@@ -30,6 +32,15 @@
       <button class="btn btn--new">🐷 Новая игра</button>
       <button class="btn btn--roll">🎲 Бросить кубик</button>
       <button class="btn btn--hold">👌 Оставить</button>
+      <button class="show-modal-window">Как играть?</button>
+        <div class="modal-window hidden-modal-win">
+      <button class="close-modal-window">&times;</button>
+<!--      <h1>Модальное Окно</h1>-->
+      <h1>
+        Первый игрок, который достигнет 100 очков победит!
+      </h1>
+    </div>
+    <div class="overlay hidden-modal-win"></div>
     </main>
     <script src="script.js"></script>
   </body>

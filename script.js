@@ -73,7 +73,7 @@ const holdScore = function (){
             totalScores[activePlayer] += currentScore;
             document.querySelector(`#score--${activePlayer}`)
                 .textContent = totalScores[activePlayer];
-            if (totalScores[activePlayer] >= 20) {
+            if (totalScores[activePlayer] >= 100) {
                 isPlaying = false;
                 document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
                 document.querySelector(`.player--${activePlayer}`).classList.add('player--active');
@@ -101,3 +101,33 @@ btnNew.addEventListener(
     initGame,
 )
 
+//Modal Window
+const btnShowModalWin = document.querySelector('.show-modal-window');
+const btnCloseModalWin = document.querySelector('.close-modal-window');
+const modalWin = document.querySelector('.modal-window');
+const overlayModalWin = document.querySelector('.overlay');
+
+const showModalWin = function () {
+    modalWin.style.display = 'block';
+    overlayModalWin.style.display = 'block';
+};
+
+const closeModalWin = function () {
+    modalWin.style.display = 'none';
+    overlayModalWin.style.display = 'none';
+};
+
+btnShowModalWin.addEventListener(
+    'click',
+    showModalWin,
+);
+
+btnCloseModalWin.addEventListener(
+    'click',
+    closeModalWin,
+);
+
+overlayModalWin.addEventListener(
+    'click',
+    closeModalWin,
+);
