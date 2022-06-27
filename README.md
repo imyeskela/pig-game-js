@@ -1,1 +1,2 @@
-# pig-game-js
+# PIG GAME
+https://vercel.com/thisisfuckingalex/pig-game
